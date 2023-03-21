@@ -1,0 +1,71 @@
+<template>
+   
+        <lightning-card title="Upload Fotos do Pet">
+            <div class="slds-p-horizontal_x-small" >
+                <lightning-layout>
+                    <lightning-layout-item size="12">
+                        <div class="slds-p-left_medium">
+                            <lightning-file-upload
+                                label=""
+                                name="Escolher Foto"
+                                accept={acceptedFormats}
+                                record-id={recordId}    
+                                >
+                            </lightning-file-upload>
+                        </div> 
+                    </lightning-layout-item>
+                </lightning-layout>
+                <br/>
+                <lightning-layout>    
+                    <lightning-layout-item size="12">
+                        <div class="slds-p-left_medium">
+                           <h2> Aquivos:</h2> <br/>
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example default base table of Opportunities">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="File Name">Nome do Arquivo</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="File Size">Tipo</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="File Size">Tamanho</div>
+                                        </th>
+                                        <th class="" scope="col">
+                                            <div class="slds-truncate" title="File Size">Apagar</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={lstAllFiles} for:item="fileIterator">
+                                        <tr class="slds-hint-parent" key={fileIterator.id}>
+                                            <th>
+                                                <lightning-icon icon-name="doctype:image" size="small" title="Image"></lightning-icon>
+                                                {fileIterator.ContentDocument.Title}
+                                            </th>
+                                            <td >
+                                                <div class="slds-truncate" title="Cloudhub">
+                                                    {fileIterator.ContentDocument.FileType}
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="slds-truncate" title="Cloudhub">
+                                                    {fileIterator.ContentDocument.ContentSize} Byte
+                                                </div>
+                                            </td>
+                                            <td><div class="button input ">
+                                                <lightning-button icon-name="action:delete" size="small" value={fileIterator.Id} onclick={apagar}
+                                                    alternative-text="Deletar" title="Deletar"></lightning-button>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </lightning-card>
+    </template>
