@@ -25,7 +25,7 @@ export default class Fileupload extends LightningElement {
     
     apagar(event){
         let targetId = event.target.value;
-        console.log('####################ID')
+       
         console.log(targetId);
 
         deleteFotoCLS({"fotoId" : targetId});
