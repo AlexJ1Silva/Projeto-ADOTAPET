@@ -27,8 +27,7 @@ export default class Fileupload extends LightningElement {
             .then(result => {
                 this.lstAllFiles = result;
                 
-            });
-            
+            });       
     }
 
    /*  @wire(getListaDocumentos) fotosList(result) {

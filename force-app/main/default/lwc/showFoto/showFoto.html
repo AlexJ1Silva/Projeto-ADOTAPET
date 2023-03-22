@@ -1,0 +1,11 @@
+<template>
+    <template if:false={showSpinner}>
+        <template for:each={listImg} for:item="item">
+            
+        <img key={item.Id} src={item.url}/>
+          
+
+        </template>
+
+    </template>
+</template>
