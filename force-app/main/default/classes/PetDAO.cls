@@ -17,8 +17,8 @@ public with sharing class PetDAO {
         (SELECT id, Contact__r.Name, Adocao__c.Name, Pet__r.Name 
         FROM Adocoes__r)
         FROM Pet__c
-        WHERE Id =:recordId
-        LIMIT 1];
+        WHERE Id =:recordId];
+        
 
     }
 }

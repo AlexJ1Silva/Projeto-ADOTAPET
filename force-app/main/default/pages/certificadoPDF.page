@@ -67,15 +67,15 @@
     
     <p><b>COD do PET Nº:</b> {!pet.Name}</p>
 
-    <p><b>Raça:</b> {!pet.Raca__c}</p>
-
     <p><b>Espécie:</b> {!pet.Especie__c}</p>
+
+    <p><b>Raça:</b> {!pet.Raca__c}</p><br/>
 
 
     <p><b>OBS</b></p><br/>
 
-    <p><b>Data da ultima vacinação: {!pet.DataUltimaVacinacao__c}.</b> </p>
-    <p><b>Data da proxima vacinação: {!pet.DataProximaVacinacao__c}. </b></p>
+    <p><b>Data da ultima vacinação: {!dataUltimaVacina}.</b> </p><br/>
+    <p><b>Data da proxima vacinação: {!dataProximaVacina}. </b></p><br/>
 
 
     <p><b>{!cidade}, {!dia} de {!mes} de {!ano}</b></p>
