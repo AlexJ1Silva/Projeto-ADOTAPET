@@ -1,0 +1,54 @@
+<template>
+    <template if:true={showSpinner}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <template if:true={naoTemDados}>
+        <span>Não foram encontrados Imóveis vendidos</span>
+    </template>
+    <template if:true={temDados}>
+        <div class="align ">
+            <table class="slds-t>able slds-table_cell-buffer slds-table_bordered"
+                aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                    <br>
+                    <div>
+                        <h1>Ultimos 5 Imóveis Vendidos</h1>
+                    </div>
+                    <br>
+                    <tr>
+                        <th>
+                            <div>Número do Imóvel</div>
+                        </th>
+                        <th>
+                            <div>Tipo do Imóvel</div>
+                        </th>
+                        <th>
+                            <div>Nome do Cliente</div>
+                        </th>
+                        <th>
+                            <div>Valor da Venda</div>
+                        </th>
+                        <th>
+                            <div>Vendedor</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template if:true={showTable}>
+                        <template for:each={ultimas5VendasList} for:item="item">
+                            <tr key={item.id} class="slds-hint-parent">
+                                <td><b><a href={item.url}>{item.numeroImovel}</a></b></td>
+                                <td>{item.tipoImovel}</td>
+                                <td><b><a href={item.cliente}>{item.nomeCliente}</a></b></td>
+                                <td><lightning-formatted-number value={item.valorVenda} format-style="currency" currency-code="BRL" currency-display-as="symbol" maximum-fraction-digits="2"></lightning-formatted-number></td>
+                                <td>{item.Vendedor}</td>
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+    </template>
+</template>

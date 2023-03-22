@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NaoAdocaoMenorDiaHoje</fullName>
+    <active>true</active>
+    <description>Uma adoção não pode ser criada com a data menor de hoje</description>
+    <errorConditionFormula>Data__c &lt; TODAY()</errorConditionFormula>
+    <errorMessage>A data de adoção não pode ser inferior a data de hoje.</errorMessage>
+</ValidationRule>

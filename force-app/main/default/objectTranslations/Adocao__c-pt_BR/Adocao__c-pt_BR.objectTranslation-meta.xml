@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Adoção</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Adoçoes</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Adoção Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ValidarAdocao</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ContatoMenorIdade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DataFechamentoMenorQueMesAtual</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>NaoAdocaoMenorDiaHoje</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Certificado_Pet</name>
+    </webLinks>
+</CustomObjectTranslation>

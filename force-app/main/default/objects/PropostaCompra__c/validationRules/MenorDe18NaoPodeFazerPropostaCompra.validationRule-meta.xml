@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MenorDe18NaoPodeFazerPropostaCompra</fullName>
+    <active>true</active>
+    <description>Se o contato da proposta de compra for menor que 18 anos, a proposta de compra não pode ser criada.</description>
+    <errorConditionFormula>Contact__r.Idade__c &lt; 18</errorConditionFormula>
+    <errorMessage>Menores de idade não podem criar proposta de compra.</errorMessage>
+</ValidationRule>

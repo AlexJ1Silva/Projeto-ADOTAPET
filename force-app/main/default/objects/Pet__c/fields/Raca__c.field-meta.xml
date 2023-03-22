@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Raca__c</fullName>
+    <externalId>false</externalId>
+    <label>Raça</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Especie__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vira-lata</fullName>
+                <default>false</default>
+                <label>Vira-lata</label>
+            </value>
+            <value>
+                <fullName>Poodle</fullName>
+                <default>false</default>
+                <label>Poodle</label>
+            </value>
+            <value>
+                <fullName>Siamês</fullName>
+                <default>false</default>
+                <label>Siamês</label>
+            </value>
+            <value>
+                <fullName>Persa</fullName>
+                <default>false</default>
+                <label>Persa</label>
+            </value>
+            <value>
+                <fullName>Americam Bully micro</fullName>
+                <default>false</default>
+                <label>Americam Bully micro</label>
+            </value>
+            <value>
+                <fullName>Americam Bully sandard</fullName>
+                <default>false</default>
+                <label>Americam Bully sandard</label>
+            </value>
+            <value>
+                <fullName>Americam Bully XL</fullName>
+                <default>false</default>
+                <label>Americam Bully XL</label>
+            </value>
+            <value>
+                <fullName>PitBull</fullName>
+                <default>false</default>
+                <label>PitBull</label>
+            </value>
+            <value>
+                <fullName>Husk</fullName>
+                <default>false</default>
+                <label>Husk</label>
+            </value>
+            <value>
+                <fullName>Buldog Frances</fullName>
+                <default>false</default>
+                <label>Buldog Frances</label>
+            </value>
+            <value>
+                <fullName>Buldog Americano</fullName>
+                <default>false</default>
+                <label>Buldog Americano</label>
+            </value>
+            <value>
+                <fullName>America Staforshire</fullName>
+                <default>false</default>
+                <label>America Staforshire</label>
+            </value>
+            <value>
+                <fullName>Siberiam</fullName>
+                <default>false</default>
+                <label>Siberiam</label>
+            </value>
+            <value>
+                <fullName>Ragdoll</fullName>
+                <default>false</default>
+                <label>Ragdoll</label>
+            </value>
+            <value>
+                <fullName>Siames</fullName>
+                <default>false</default>
+                <label>Siames</label>
+            </value>
+            <value>
+                <fullName>Mainecon</fullName>
+                <default>false</default>
+                <label>Mainecon</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Vira-lata</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Poodle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Americam Bully micro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Americam Bully sandard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Americam Bully XL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>PitBull</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Husk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Buldog Frances</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>Buldog Americano</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cachorro</controllingFieldValue>
+            <valueName>America Staforshire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Siamês</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Persa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Siberiam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Ragdoll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Siames</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Gato</controllingFieldValue>
+            <valueName>Mainecon</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -9,7 +9,7 @@ export default class Fileupload extends LightningElement {
     @track lstAllFiles = [];
     @track error;
     @track fotoId;
-    //@track wirelstAllFIles = [];
+    @track wirelstAllFIles = [];
     get acceptedFormats() {
         return ['.pdf', '.png', '.jpg'];
     }
@@ -27,7 +27,8 @@ export default class Fileupload extends LightningElement {
             .then(result => {
                 this.lstAllFiles = result;
                 
-            });       
+            });
+            
     }
 
    /*  @wire(getListaDocumentos) fotosList(result) {

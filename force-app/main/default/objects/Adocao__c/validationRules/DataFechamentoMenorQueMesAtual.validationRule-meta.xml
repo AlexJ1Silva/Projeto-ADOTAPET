@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataFechamentoMenorQueMesAtual</fullName>
+    <active>true</active>
+    <description>Por conta do fechamento contábil, a data da adoção não pode ser maior que
+o mês atual.</description>
+    <errorConditionFormula>AND(Data__c &gt; TODAY() + 30 )</errorConditionFormula>
+    <errorMessage>A data de adoção não pode ser maior que 30 dias</errorMessage>
+</ValidationRule>

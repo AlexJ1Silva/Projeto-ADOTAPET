@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>EmailNotificaContato</fullName>
+        <description>No momento da submissão, enviar uma notificação por e-mail para o contato da proposta, informando que a proposta está em análise</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alex.silva.dev@everymind.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/EmailNotificaContatoStatusAnalise</template>
+    </alerts>
+    <alerts>
+        <fullName>finalizacaooAprovacao</fullName>
+        <description>Após a finalização da aprovação, uma notificação por e-mail deverá ser disparada para o contato.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>alex.silva.dev@everymind.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/NotificaContatoPropostaFinalizada</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AlteraStatusAguardandoPagamento</fullName>
+        <description>Em caso de aprovação, alterar o status para “Aguardando pagamento”</description>
+        <field>Status__c</field>
+        <literalValue>Aguardando pagamento</literalValue>
+        <name>AlteraStatusAguardandoPagamento</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AlteraStatusEmAnalise</fullName>
+        <description>No momento da submissão, alterar o status para “Em análise”</description>
+        <field>Status__c</field>
+        <literalValue>Em análise</literalValue>
+        <name>AlteraStatusEmAnalise</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AlteraStatusReprovada</fullName>
+        <description>Em caso de reprovação, alterar o status para “Reprovada”</description>
+        <field>Status__c</field>
+        <literalValue>Reprovada</literalValue>
+        <name>AlteraStatusReprovada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AtualizaStatusFinalizada</fullName>
+        <field>Status__c</field>
+        <literalValue>Finalizada</literalValue>
+        <name>AtualizaStatusFinalizada</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

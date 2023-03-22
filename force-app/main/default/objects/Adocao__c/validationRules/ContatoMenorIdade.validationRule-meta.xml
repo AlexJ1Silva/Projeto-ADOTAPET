@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContatoMenorIdade</fullName>
+    <active>true</active>
+    <description>Se o contato da adoção for menor que 18 anos, a adoção não pode ser
+criada.</description>
+    <errorConditionFormula>AND( Contact__r.Idade__c &lt; 18 )</errorConditionFormula>
+    <errorMessage>Menores de idade não pode iniciar um processo de adoção.</errorMessage>
+</ValidationRule>

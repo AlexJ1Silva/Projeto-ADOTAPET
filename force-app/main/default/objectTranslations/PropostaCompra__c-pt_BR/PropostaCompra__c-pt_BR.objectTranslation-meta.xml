@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Proposta de compra</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Propostas de compra</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Proposta de compra Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ValidarPagamento</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>MenorDe18NaoPodeFazerPropostaCompra</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>NaoPropostaCompraDataInferiorHoje</name>
+    </validationRules>
+</CustomObjectTranslation>
