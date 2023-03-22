@@ -48,7 +48,7 @@
 <body>
     <!-- <apex:slds /> -->
     <div class="logo">
-        <apex:image url="{!$Resource.LogoADOTAPET}" rendered="true" width="200" height="200" />
+        <apex:image url="{!$Resource.LogoADOTAPET}" rendered="true" width="300" height="200" />
     </div>
         
         <hr/>
