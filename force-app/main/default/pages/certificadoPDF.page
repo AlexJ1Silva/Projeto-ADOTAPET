@@ -1,0 +1,102 @@
+<apex:page controller="CertificadoPdfController" applyBodyTag="false" renderAs="advanced_pdf" docType="html-5.0">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <style type="text/css">
+     @page {
+            size: A4;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color:black!important;
+        }
+        table {
+            page-break-after:auto;
+        }
+        tr:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+        #header {
+            width: 100% !important;height: 100px;
+        }
+       
+        .logo {
+            float:center;
+            text-align:center;
+        }
+        
+     
+        .title {
+            text-align:center; 
+            font-weight: bold; 
+            text-decoration: underline;
+            margin: 40px;
+            margin-bottom: 50px;
+        }
+        .corpo {
+
+            text-align:justify; 
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .margin-bottom {
+            margin-bottom: 15px;
+        }
+          
+       
+    </style>
+</head>
+<body>
+    <!-- <apex:slds /> -->
+    <div class="logo">
+        <apex:image url="{!$Resource.LogoADOTAPET}" rendered="true" width="200" height="200" />
+    </div>
+        
+        <hr/>
+       
+    <div class="title">CERTIFIVADO DO PET
+    </div>
+    
+    
+
+    <p><b>ADOÇÃO Nº </b>{!pet.Adocoes__r[0].Name}</p>
+
+    <p><b>RECIBO DE:</b> ADOTAPET</p>
+
+    <p><b>NOME:</b></p>
+    <hr/> 
+    
+    <p><b>COD do PET Nº:</b> {!pet.Name}</p>
+
+    <p><b>Raça:</b> {!pet.Raca__c}</p>
+
+    <p><b>Espécie:</b> {!pet.Especie__c}</p>
+
+
+    <p><b>OBS</b></p><br/>
+
+    <p><b>Data da ultima vacinação: {!pet.DataUltimaVacinacao__c}.</b> </p>
+    <p><b>Data da proxima vacinação: {!pet.DataProximaVacinacao__c}. </b></p>
+
+
+    <p><b>{!cidade}, {!dia} de {!mes} de {!ano}</b></p>
+
+
+    <p>____________________________________</p>
+
+    <p><b>{!pet.Adocoes__r[0].Contact__r.Name}</b></p>
+
+
+    <p>____________________________________</p>
+
+    <p><b>ADOTAPET</b></p>
+
+    
+
+
+
+
+
+    
+
+</body>
+</apex:page>

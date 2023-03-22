@@ -7,13 +7,7 @@ public with sharing class UploadPhotoController {
                 WHERE LinkedEntityId  =:recordId];
     }
 
-  /*   @AuraEnabled
-    public static List<ContentDocumentLink> listaDocumentos(List<ContentDocumentLink> listdoc){
-        return [SELECT Id, LinkedEntityId, ContentDocument.CreatedDate, ContentDocument.Title, 
-        ContentDocument.ContentSize, ContentDocument.FileType 
-    FROM ContentDocumentLink WHERE id IN :listdoc];
-    }  */
-    
+  
   
 
     @AuraEnabled 
@@ -21,9 +15,12 @@ public with sharing class UploadPhotoController {
 
         ContentDocumentLink docList = new ContentDocumentLink();
         docList.Id = fotoId;
-  
+        
        
        delete docList;
+
+
+
   
         return true;
     }
