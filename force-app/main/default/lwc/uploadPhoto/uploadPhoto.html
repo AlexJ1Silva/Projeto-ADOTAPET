@@ -10,7 +10,7 @@
                                 name="Escolher Foto"
                                 accept={acceptedFormats}
                                 record-id={recordId}    
-                                >
+                                onuploadfinished={handleUploadFinished} multiple>
                             </lightning-file-upload>
                         </div> 
                     </lightning-layout-item>
@@ -20,7 +20,7 @@
                     <lightning-layout-item size="12">
                         <div class="slds-p-left_medium">
                            <h2> Aquivos:</h2> <br/>
-                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Example default base table of Opportunities">
+                            <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="">
                                 <thead>
                                     <tr class="slds-line-height_reset">
                                         <th class="" scope="col">
